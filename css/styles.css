@@ -1,0 +1,411 @@
+/* Основа сайта */
+
+:root {
+    
+    /* Шрифта */
+    --main-fonts : 'Roboto';
+    --secondary-fonts : 'Raleway';
+
+    /* Цвета */
+    --primary-text-color : #212121;
+    --title-text-color : #ffffff;
+    --text-color : #757575;
+    --accent-color : #2196F3;
+    --background-color: #2F303A;
+    --dark-color: #000000;
+    --second-background-color: #F5F4FA;
+}
+
+/* common styles star */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link { 
+    text-decoration: none;
+
+    text-decoration: none;
+	color: inherit;
+}
+
+.list {
+    list-style: none;
+
+    list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+.btn {
+    font-family: var(--main-fonts);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    cursor: pointer;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+
+
+/* Body */
+
+body {
+    font-family: var(--main-fonts);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--title-text-color);
+
+}
+
+/* logo */
+
+.logo {
+    font-family: var(--secondary-fonts);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.part-logo-dark {
+    color: var(--dark-color);
+}
+
+.part-logo-white {
+    color: var(--title-text-color);
+}
+
+
+
+/* Шапка профиля */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-;
+}
+
+.header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-family: var(--main-fonts);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+
+  }
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.header-list {
+    display: flex;
+    margin-left: 93px;
+
+}
+
+.header-list-item:not(:last-child) {
+    margin-right: 50px;
+
+}
+
+.header-list .current {
+    color: var(--accent-color);
+}
+
+
+
+.header-contacts-list {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.header-contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-contacts .item + .item {
+   margin-left: 50px;
+}
+
+
+.header-contacts-list:hover,
+.header-contacts-list:focus {
+    color: var(--accent-color);
+}
+
+
+/* Герой */
+
+
+
+.hero-container {
+margin-bottom: 94px;
+
+background-color: var(--background-color);
+  
+
+}
+
+.hero-title {
+
+    padding-top: 200px;
+    padding-right: 452px;
+    padding-left: 452px;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.hero-btn {
+    color: var(--title-text-color);
+    background-color: var(--accent-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--title-text-color);
+    color: var(--accent-color);
+}
+
+
+/* Особенности компании */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.company-container {
+ margin-bottom: 94px;
+ 
+}
+
+.class-features-list {
+    display: flex;
+}
+
+.class-features-list .item {
+    width: 270px;
+}
+
+.class-features-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+.company-features-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.company-features-text {
+    line-height: 1.71;
+    color: var(--text-color);
+}
+
+
+/* What does do */
+
+.does-list {
+    display: flex;
+}
+
+.does-item {
+    margin-top: 50px;
+    margin-bottom: 94px;
+}
+
+.does-item:not(:last-child) {
+  margin-right: 30px;
+
+}
+
+
+
+.does-text {
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--primary-text-color);
+}
+
+
+/* Team */
+
+.team-container {
+background-color:var(--second-background-color)
+    
+}
+
+.team-title {
+    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: var(--primary-text-color);
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-item {
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+
+   background:var(--title-text-color)
+}
+
+.team-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--primary-text-color);
+}
+
+.team-text {
+    line-height: 1.18;
+    color:var(--text-color)
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--background-color);
+}
+
+.adress-link {
+    font-family: var(--main-fonts);
+    font-style: normal;
+    line-height: 1.71;
+    color: var(--title-text-color);
+}
+
+.adress-link:hover,
+.adress-link:focus {
+    color: var(--accent-color);
+}
+
+
+.contact-link {
+    font-family: var(--main-fonts);
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--accent-color);
+}
+
+
+
+/* Portfolio */
+
+
+.portfolio-btn {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: var(--title-text-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio-item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--primary-text-color);
+}
+
+.portfolio-text {
+    font-family: var(--main-fonts);
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--text-color);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    color: var(--accent-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
